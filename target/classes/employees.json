@@ -1,0 +1,110 @@
+[
+  {
+    "Id": 1,
+    "Name": "Joseph Josephson",
+    "StartDate": "2015-06-01",
+    "EndDate": null,
+    "Department": "IT",
+    "Role": "Senior Developer",
+    "Salary": 5000.00
+  },
+  {
+    "Id": 2,
+    "Name": "Amanda Smith",
+    "StartDate": "2018-03-12",
+    "EndDate": null,
+    "Department": "HR",
+    "Role": "HR Manager",
+    "Salary": 4500.00
+  },
+  {
+    "Id": 3,
+    "Name": "Roger Adams",
+    "StartDate": "2017-05-23",
+    "EndDate": null,
+    "Department": "Finance",
+    "Role": "Accountant",
+    "Salary": 4000.00
+  },
+  {
+    "Id": 4,
+    "Name": "Anna Johnson",
+    "StartDate": "2019-07-18",
+    "EndDate": null,
+    "Department": "Marketing",
+    "Role": "Marketing Coordinator",
+    "Salary": 4200.00
+  },
+  {
+    "Id": 5,
+    "Name": "Markus Brown",
+    "StartDate": "2016-08-15",
+    "EndDate": null,
+    "Department": "Sales",
+    "Role": "Sales Representative",
+    "Salary": 4000.00
+  },
+  {
+    "Id": 6,
+    "Name": "Linda Garcia",
+    "StartDate": "2020-01-06",
+    "EndDate": null,
+    "Department": "IT",
+    "Role": "Junior Developer",
+    "Salary": 3800.00
+  },
+  {
+    "Id": 7,
+    "Name": "Oscar Wilson",
+    "StartDate": "2014-09-29",
+    "EndDate": null,
+    "Department": "IT",
+    "Role": "DevOps Engineer",
+    "Salary": 5200.00
+  },
+  {
+    "Id": 8,
+    "Name": "Julie Taylor",
+    "StartDate": "2018-06-19",
+    "EndDate": null,
+    "Department": "Operations",
+    "Role": "Operations Manager",
+    "Salary": 4600.00
+  },
+  {
+    "Id": 9,
+    "Name": "Andrew Anderson",
+    "StartDate": "2017-11-01",
+    "EndDate": null,
+    "Department": "Customer Service",
+    "Role": "Customer Service Agent",
+    "Salary": 3500.00
+  },
+  {
+    "Id": 10,
+    "Name": "Monica King",
+    "StartDate": "2015-12-05",
+    "EndDate": "2021-03-30",
+    "Department": "IT",
+    "Role": "System Analyst",
+    "Salary": 4800.00
+  },
+  {
+    "Id": 11,
+    "Name": "Lucas Wright",
+    "StartDate": "2019-02-20",
+    "EndDate": null,
+    "Department": "IT",
+    "Role": "Data Scientist",
+    "Salary": 6200.00
+  },
+  {
+    "Id": 12,
+    "Name": "Emma Green",
+    "StartDate": "2016-04-15",
+    "EndDate": "2022-06-17",
+    "Department": "HR",
+    "Role": "Recruiter",
+    "Salary": 4100.00
+  }
+]

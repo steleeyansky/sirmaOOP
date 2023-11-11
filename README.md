@@ -31,3 +31,4 @@ Follow these instructions to get the project up and running on your local machin
 
    ```shell
   git clone git@github.com:steleeyansky/sirmaOOP.git
+  ```

@@ -47,7 +47,7 @@ public class StaffService implements IEmployeeService {
 
     @Override
     public void fireEmployee(int id) {
-        // Implement the logic to fire an employee
+        employees.removeIf(employee -> employee.getId() == id);
     }
 
     @Override

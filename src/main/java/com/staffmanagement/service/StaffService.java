@@ -34,9 +34,10 @@ public class StaffService implements IEmployeeService {
         }
     }
 
+
     @Override
     public void addEmployee(Employee employee) {
-        // Implement the logic to add an employee
+        employees.add(employee);
     }
 
     @Override

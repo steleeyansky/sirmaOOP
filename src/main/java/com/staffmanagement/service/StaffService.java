@@ -42,7 +42,12 @@ public class StaffService implements IEmployeeService {
 
     @Override
     public void editEmployee(int id, Employee updatedEmployee) {
-        // Implement the logic to edit an employee
+        for (int i = 0; i < employees.size(); i++) {
+            if (employees.get(i).getId() == id) {
+                employees.set(i, updatedEmployee);
+                break;
+            }
+        }
     }
 
     @Override
@@ -52,13 +57,11 @@ public class StaffService implements IEmployeeService {
 
     @Override
     public List<Employee> listEmployees() {
-        // Implement the logic to list all employees
         return employees;
     }
 
     @Override
     public Employee searchById(int id) {
-        // Implement the logic to search for an employee by ID
         return null;
     }
 

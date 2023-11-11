@@ -77,10 +77,21 @@ public class StaffManager implements Manager  {
     private void addEmployee() {
         System.out.println("Enter employee ID:");
         int id = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine(); // Consume the remaining newline
 
         System.out.println("Enter employee name:");
         String name = scanner.nextLine();
+
+        System.out.println("Enter start date (yyyy-MM-dd):");
+        String startDateStr = scanner.nextLine();
+        LocalDate startDate = LocalDate.parse(startDateStr, DATE_FORMATTER);
+
+        System.out.println("Enter end date (yyyy-MM-dd) or press ENTER if none:");
+        String endDateStr = scanner.nextLine();
+        LocalDate endDate = null;
+        if (!endDateStr.isEmpty()) {
+            endDate = LocalDate.parse(endDateStr, DATE_FORMATTER);
+        }
 
         System.out.println("Enter department:");
         String department = scanner.nextLine();
@@ -90,24 +101,16 @@ public class StaffManager implements Manager  {
 
         System.out.println("Enter salary:");
         double salary = scanner.nextDouble();
-        scanner.nextLine();
+        scanner.nextLine(); // Consume the remaining newline
 
-        String startDate = LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE);
-        String endDate = null;
-
-        Employee employee = new Employee(id, name, department, role, salary, startDate, endDate);
+        Employee employee = new Employee(id, name, department, role, salary, startDate.format(DATE_FORMATTER), endDate != null ? endDate.format(DATE_FORMATTER) : null);
         employee.setActive(true);
 
-        // Add the employee to the in-memory list
+
         employeeService.addEmployee(employee);
         System.out.println("Employee added successfully.");
 
-        // Refresh the in-memory list with the latest data from the file
-        try {
-            service.loadEmployees();
-        } catch (IOException e) {
-            System.err.println("Error loading employees: " + e.getMessage());
-        }
+        hasUnsavedChanges = true; // Indicate that there are unsaved changes
     }
 
 

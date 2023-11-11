@@ -29,6 +29,5 @@ Follow these instructions to get the project up and running on your local machin
 
 1. Clone the repository to your local machine:
 
-   ```shell
   git clone git@github.com:steleeyansky/sirmaOOP.git
-  ```
+ 
